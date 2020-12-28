@@ -176,6 +176,10 @@ def player_numbers(input)
   return output
 end
 
+def player_stats
+  
+end
+
 def big_shoe_rebounds
   
 end
