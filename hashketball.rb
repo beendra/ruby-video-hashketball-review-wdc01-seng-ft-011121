@@ -176,8 +176,18 @@ def player_numbers(input)
   return output
 end
 
-def player_stats
-  
+def player_stats(input)
+  game_hash.each do |team, team_info|
+    team_info.each do |key, value|
+      if key == :players
+        value.each do |player|
+          if input == player[:player_name]
+            return player
+          end
+        end
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds
