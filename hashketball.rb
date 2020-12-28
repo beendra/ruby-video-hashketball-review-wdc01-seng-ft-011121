@@ -217,8 +217,11 @@ def most_points_scored
 end
 
 def winning_team
- 
-    
+  if team_stats(:home)[:points] > team_stats(:away)[:points]
+    return team_names[0]
+  else
+    return team_names[1]
+  end
 end
 
 def player_with_longest_name
