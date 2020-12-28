@@ -228,6 +228,6 @@ def player_with_longest_name
   all_players.keys.max_by { |name| name.length }
 end
 
-def long_name_steals_a_ton
-  
+def long_name_steals_a_ton?
+  player_w_max_stat(:steals) == player_with_longest_name
 end
